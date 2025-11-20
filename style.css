@@ -1,0 +1,117 @@
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#titulo-principal {
+    text-align: center;
+    margin-top: 0.6rem; 
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.titulo-green { color: #228B22; }
+.titulo-brown { color: rgb(114, 58, 12); }
+
+#subtitulo-principal {
+    text-align: center;
+    margin-top: 0.12rem; 
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.sub-green { color: #228B22; }
+.sub-brown { color: rgb(114, 58, 12); }
+
+#friends {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.05rem;
+}
+
+#friends .titulo-green, #friends .titulo-brown {
+    font-weight: 700;
+}
+
+details {
+    background: #f6fbf4;
+    border: 1px solid rgba(50,86,14,0.12);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin: 0.75rem auto;
+    max-width: 800px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+details summary {
+    cursor: pointer;
+    font-weight: 700;
+    outline: none;
+    display: list-item; 
+}
+
+summary::-webkit-details-marker { display: none; }
+summary::marker { display: none; }
+
+details summary::before {
+    content: "▸";
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: transform .18s ease;
+    margin-right: .6rem;
+    color: rgba(50,86,14,0.9);
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+details p, details ul {
+    margin: .5rem 0 0 .25rem;
+    color: #333;
+    line-height: 1.45;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    padding: 2rem 1rem;
+}
+
+.donate-form {
+    width: 100%;
+    max-width: 420px;
+    background: #f9fff6;
+    padding: 1.25rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(10,30,10,0.06);
+    border: 1px solid rgba(34,139,34,0.06);
+}
+
+.donate-form h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    color: #196619;
+    text-align: center;
+}
+
+.donate-form label {
+    display: block;
+    margin-top: 0.75rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #133;
+}
+
+.donate-form input[type="text"],
+.donate-form input[type="email"],
+.donate-form input[type="number"] {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.25rem;
+    border: 1px solid #d7e7d7;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
