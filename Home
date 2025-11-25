@@ -53,8 +53,6 @@
         </details>
         
         <h2 id="friends"><em><strong><span class="titulo-green">#FRIENDS</span><span class="titulo-brown">OFTREES</span></strong></em></h2>
-
-    </body>
 				
 				<style>
 						body {
@@ -174,5 +172,9 @@ main {
     box-sizing: border-box;
     font-size: 1rem;
 }
+
 	</style>
+
+</body>
+
 </html>
